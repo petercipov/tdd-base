@@ -1,5 +1,8 @@
 # TDD start repo
 
+## Available Bases
+* [master](https://github.com/petercipov/tdd-base/tree/master) - simple repo with minimal tools, handy for quick command-line prototyping
+* [nest.js](https://github.com/petercipov/tdd-base/tree/nest.js) - fully fledged skeleton for nest.js
 ## Options
 ```
 npm run

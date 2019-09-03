@@ -7,7 +7,7 @@
     "lint": "npx tslint -c tslint.json --project tsconfig.json 'src/**/*.ts'",
     "lint:fix": "npx tslint -c tslint.json --project tsconfig.json --fix 'src/**/*.ts'",
     "compile": "tsc",
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "npm run lint && npm run compile && npm run test",
     "test:watch": "jest --watch"
   },

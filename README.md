@@ -3,6 +3,8 @@
 ## Options
 ```
 npm run
+  start
+    starts server on default port
   lint
     runs tslint on src folder
   lint:fix
@@ -18,8 +20,16 @@ npm run
 ```
 
 
-## Quick Start
+## Quick Start TDD
 ```
   npm install
   npm run test:watch
 ```
+
+## Quick Start Server
+```
+  npm install
+  npm run build
+  npm run start
+```
+API documentation at http://localhost:8080/swagger

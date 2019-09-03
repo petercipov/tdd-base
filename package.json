@@ -4,6 +4,7 @@
   "description": "TDD start repo",
   "main": "index.js",
   "scripts": {
+    "start": "node $NODE_DEBUG_OPTION ./lib/src/index.js",
     "lint": "npx tslint -c tslint.json --project tsconfig.json 'src/**/*.ts'",
     "lint:fix": "npx tslint -c tslint.json --project tsconfig.json --fix 'src/**/*.ts'",
     "compile": "tsc",
@@ -16,7 +17,8 @@
     "url": "git+https://github.com/iflix/tdd-base.git"
   },
   "keywords": [
-    "tdd"
+    "tdd",
+    "nest.js"
   ],
   "author": "Peter Cipov",
   "license": "ISC",
@@ -25,6 +27,8 @@
   },
   "homepage": "https://github.com/iflix/tdd-base#readme",
   "devDependencies": {
+    "@nestjs/testing": "^6.6.6",
+    "@types/bunyan": "^1.8.6",
     "@types/jest": "^24.0.18",
     "jest": "^24.9.0",
     "pre-commit": "^1.2.2",
@@ -36,5 +40,15 @@
   "precommit": [
     "lint",
     "test"
-  ]
+  ],
+  "dependencies": {
+    "@nestjs/common": "^6.6.6",
+    "@nestjs/core": "^6.6.6",
+    "@nestjs/platform-express": "^6.6.6",
+    "@nestjs/swagger": "^3.1.0",
+    "bunyan": "^1.8.12",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.2",
+    "swagger-ui-express": "^4.0.7"
+  }
 }
